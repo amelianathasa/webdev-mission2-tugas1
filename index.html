@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Books Store</title>
+  </head>
+
+  <body data-spy="scroll" data-target="#navbar" class="body">
+    <div class="container">
+      <!-- Navbar -->
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+            <img src="img/books-logo.png" alt="Hack Design Logo" class="d-inline-block align-text-top mt-2" id="logo" />
+          </a>
+        </nav>
+      </header>
+
+      <!-- Book Content -->
+      <div class="books-list">
+        <h4 class="card-book-title mb-3 mt-4">Book Recommendations</h4>
+        <div class="books">
+          <!-- Render Books -->
+        </div>
+      </div>
+
+      <!-- Cart Content -->
+      <div class="cart">
+        <h4 class="card-cart-title mb-3 mt-4">My Cart</h4>
+        <div class="card" id="cart">
+          <div class="cart-list">
+            <div class="table-responsive">
+              <table class="table" style="width: 100%">
+                <tr class="center">
+                  <th style="width: 10%">No</th>
+                  <th style="width: 30%">Cover</th>
+                  <th style="width: 30%">Item</th>
+                  <th style="width: 30%">Total</th>
+                </tr>
+                <!-- Render Cart -->
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="cart-total"></div>
+        <div class="row">
+          <div class="col-md-10"></div>
+          <button class="col-md-1 btn btn-danger mb-5 mt-3 mr-2" id="reset">Reset</button>
+          <button class="col-md-1 btn btn-primary mb-5 mt-3 mr-2 struk" data-bs-toggle="modal" data-bs-target="#struk">Lihat Struk</button>
+        </div>
+        <div class="modal fade" id="struk" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Struk Belanja</h5>
+              </div>
+              <div class="modal-body"></div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="border-top">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <p>&copy; 2023</p>
+          </nav>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Javascript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./books.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

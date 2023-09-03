@@ -1,0 +1,58 @@
+const books = [
+  {
+    id: 0,
+    name: "Laut Bercerita",
+    price: 115.0,
+    stock: 100,
+    imgSrc: "./img/book-1.jpg",
+  },
+  {
+    id: 1,
+    name: "Home Sweet Loan",
+    price: 84.15,
+    stock: 10,
+    imgSrc: "./img/book-2.jpg",
+  },
+  {
+    id: 2,
+    name: "Hai, Miiko! 34 - Premium",
+    price: 60.0,
+    stock: 6,
+    imgSrc: "./img/book-3.jpeg",
+  },
+  {
+    id: 3,
+    name: "Jujutsu Kaisen 05",
+    price: 40.0,
+    stock: 150,
+    imgSrc: "./img/book-4.jpg",
+  },
+  {
+    id: 4,
+    name: "Rich Dad Poor Dad",
+    price: 68.0,
+    stock: 90,
+    imgSrc: "./img/book-5.jpg",
+  },
+  {
+    id: 5,
+    name: "Yotsuba &! 15",
+    price: 40.0,
+    stock: 100,
+    imgSrc: "./img/book-6.jpg",
+  },
+  {
+    id: 6,
+    name: "Bicara Itu Ada Seninya",
+    price: 79.0,
+    stock: 25,
+    imgSrc: "./img/book-7.jpg",
+  },
+  {
+    id: 7,
+    name: "Mata dan Rahasia Pulau Gapi",
+    price: 79.0,
+    stock: 99,
+    imgSrc: "./img/book-8.jpg",
+  },
+];

@@ -1,0 +1,166 @@
+/* Mengatur jumlah kolom berdasarkan lebar layar */
+@media (max-width: 768px) {
+  .books {
+    grid-template-columns: repeat(2, 1fr); /* Dua kolom pada layar kecil */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .books {
+    grid-template-columns: repeat(3, 1fr); /* Tiga kolom pada layar sedang */
+  }
+}
+
+@media (min-width: 1025px) {
+  .books {
+    grid-template-columns: repeat(4, 1fr); /* Empat kolom pada layar besar */
+  }
+}
+
+/* CSS Color */
+:root {
+  --red: #de3f1c;
+  --grey: #949eb2;
+  --light-gray: #f6f6f6;
+  --black-dope: #38404f;
+  --med-gray: #778298;
+  --green: #65d777;
+  --sage: #81d67e;
+  --gray: #808080;
+}
+
+/* CSS Tag */
+body {
+  display: block;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--gray);
+  margin-left: 3rem;
+}
+
+header {
+  box-shadow: #38404f;
+}
+
+h6 {
+  color: var(--gray);
+}
+
+/* Style */
+.body {
+  background-color: var(--light-gray);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.card #books {
+  width: 17rem;
+}
+
+.center {
+  text-align: center;
+  align-content: center;
+}
+
+.right {
+  margin-left: 100px;
+}
+
+.left {
+  text-align: left;
+  align-items: left;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#logo {
+  width: 15rem;
+  position: relative;
+}
+
+/* Book */
+.card-book-quantity {
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+.card-book-quantity .number {
+  width: 2.8rem;
+  height: 2.35rem;
+  margin-top: 0rem;
+  text-align: center;
+  border-radius: 3.5px;
+  border: 1px solid;
+}
+
+.book-list {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.books {
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: 1fr 1fr;
+}
+
+.card .book-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.books img {
+  width: 12rem;
+  height: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Cart */
+
+.cart-list img {
+  width: 5rem;
+  height: auto;
+}
+
+/* CSS untuk tabel */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* CSS untuk sel data */
+.table td {
+  text-align: center;
+  padding: 10px;
+}
+
+/* CSS untuk gambar dalam sel */
+.img-cart {
+  max-width: 100px;
+  height: auto;
+}
+
+/* CSS untuk sel header yang pertama */
+.table th:first-child {
+  text-align: center;
+}
+
+/* CSS untuk sel data yang pertama */
+.table td:first-child {
+  text-align: center;
+}
